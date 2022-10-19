@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../model/user.dart';
+import 'register_form_page.dart';
 
 class UserInfoPage extends StatelessWidget {
 
@@ -28,6 +29,7 @@ class UserInfoPage extends StatelessWidget {
                 Icons.person,
                 color: Colors.black,
               ),
+
               trailing: Text(userInfo.country),
               
             ),
@@ -40,6 +42,7 @@ class UserInfoPage extends StatelessWidget {
                 Icons.phone,
                 color: Colors.black,
               ),
+
               trailing: Text(userInfo.gender),
             ),
             ListTile(
