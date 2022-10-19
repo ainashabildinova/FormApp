@@ -30,7 +30,7 @@ class _RegisterFormPageState extends State<RegisterFormPage> {
   final List<String> _countries = ['Russia', 'Ukraine', 'Germany', 'France'];
   String _selectedCountry = 'Russia';
 
-  final List<String> _gender= ['Male', 'Female', 'Other'];
+  final List<String> gender= ['Male', 'Female', 'Other'];
   String _selectedGender = 'Female';
 
   final _nameFocus = FocusNode();
@@ -273,7 +273,7 @@ class _RegisterFormPageState extends State<RegisterFormPage> {
                   border: OutlineInputBorder(),
                   icon: Icon(Icons.person),
                   labelText: 'Gender'),
-              items: _gender.map((gender) {
+              items: gender.map((gender) {
                 return DropdownMenuItem(
                   value: gender,
                   child: Text(gender),
@@ -437,3 +437,4 @@ class _RegisterFormPageState extends State<RegisterFormPage> {
     );
   }
 }
+
